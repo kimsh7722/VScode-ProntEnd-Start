@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+        width: 100px; height: 100px;
+        background-color: blue;
+        }
+        span {
+        width: 100px; height: 100px;
+        background-color: red;
+        /* display: block; */
+        }
+
+        /* span의 display속성은 기본값이 inline이다  */
+        #span1 {
+            width: 100px; height: 100px;
+            background-color: aqua;
+        }
+        #span2 {
+            width: 100px; height: 100px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        div 
+        └div[영역]의 기본display속성은 block이다.
+        └큰영역은 div를 쓴다.
+        └세로 배치
+
+        span - google에선 컨테이너 박스를 의미한다
+        └span[확장]의 기본display속성은 inline이다.
+        └span으로 간단하게 글자 꾸미기도 쓴다
+        └inline은 글자크기만큼 영역이 잡히며 가로배치이다
+
+     -->
+     <div>
+         div입니다
+     </div>
+     <span>
+         span입니다
+     </span>
+     <hr>
+     <span id="span1">
+        SPAN1
+     </span>
+     <span id="span2">
+        SPAN2
+    </span>
+    
+</body>
+</html>
