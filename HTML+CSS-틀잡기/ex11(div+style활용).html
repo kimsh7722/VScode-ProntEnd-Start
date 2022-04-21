@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap { 
+            width:1200px;
+            height: 700px;
+            background-color: aqua;
+        }
+        #header {
+            width: 1200px; height: 100px;
+            background-color: aquamarine;
+        }
+        /*
+            하위 선택자
+            #header>#logo 
+             -> 아이디가 header인 요소 한칸 밑에 있는 아이디가 logo인 요소
+
+            #header #logo
+             -> 아이디가 header인 요소 몇칸 밑이든... 아이디가 logo인 요소
+        */
+        #header>#logo{
+            width:200px; height: 100px;
+            background-color: red;
+            /*inline-block을 쓰게대면 사이에 marign 공간이 생긴다
+                margin공간이 조절하면 하여 오른쪽부터 땡겨버린다
+            
+            display: inline-block;
+            margin-right: -7px; */
+
+            /*float는 위치 배정이다 그즉시 지정한다*/
+            float: left;
+        }
+        #header>#menu {
+            width:600px; height: 100px;
+            background-color: orange;
+            /* display: inline-block; */
+            float: right;
+        }
+        #header>#other {
+            width: 400px; height: 100px;
+            background-color: brown;
+            float: left;
+        }
+        #slide {
+            width:1200px; height: 250px;
+            background-color: azure;
+        }
+        
+        #content {
+            width: 1200px; height: 250px;
+            background-color: yellow;
+        }
+        #content>#cont1 {
+            width: 400px; height: 200px;
+            background-color: rgb(43, 137, 226);
+            float: left;
+        }
+        #content>#cont2 {
+            width: 400px; height: 200px;
+            background-color: rgb(43, 226, 156);
+            float: left;
+        }
+        #content>#cont3 {
+            width: 400px; height: 200px;
+            background-color: rgb(195, 43, 226);
+            float: left;
+        }
+
+        #footer {
+            width:1200px; height:100px;
+            background-color: greenyellow;
+        }
+        #footer>#footerlogo {
+            width: 200px; height: 50px;
+            background-color: beige;
+            float: left;
+        }
+        #footer>#copyright {
+            width: 500px; height: 50px;
+            background-color: rgb(245, 235, 220);
+            float: left;
+        }
+        #footer>#sns {
+            width: 500px; height: 50px;
+            background-color: rgb(245, 220, 226);
+            float: left;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="wrap"><!-- 가로 1200px, 세로 700px -->
+        전체틀
+        <header id="header"><!-- 시맨틱 태그 -->
+            <div id="logo">
+                로고
+            </div>
+            <div id="menu">
+                메뉴
+            </div>
+            <div id="other">
+                메뉴
+            </div>
+        </header>
+        <div id="slide">슬라이드</div>
+        <div id="content">
+            <div id="cont1">
+                컨텐츠1
+            </div>
+            <div id="cont2">
+                컨텐츠2
+            </div>
+            <div id="cont3">
+                컨텐츠2
+            </div>
+            컨탠츠 영역
+        </div>
+        <footer id="footer">
+            <div id="footerlogo">
+                logo구간
+            </div>
+            <div id="copyright">
+                카피라이트
+            </div>
+            <div id="sns">
+                SNS
+            </div>
+            포터영역
+        </footer>
+    </div>
+</body>
+</html>
