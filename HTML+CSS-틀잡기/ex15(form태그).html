@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- 
+            action : 행동을 취하라
+            method : 전송방식 
+            
+            form태그 안에 입력한 값들을 "loginCheck.jsp"페이지로 보낸다.
+        -->
+    <form action="loginCheck.jsp" method="get">
+        <label for="id">ID:</label>
+        <input type="text" placeholder="아이디입력" id="id">
+        <br>
+        <label for="pw">PW:</label>
+        <input type="password" placeholder="패스워드입력" id="pw"><br>
+        <input type="submit" value="로그인">
+
+    </form>
+</body>
+</html>
