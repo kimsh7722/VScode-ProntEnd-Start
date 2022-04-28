@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* Img spright generator
+        위치 - https://www.toptal.com/developers/css/sprite-generator/
+        여러장의 이미지를 뭉쳐서 한번에 관리함
+        관리의 편리함 + 속도가 좋아짐
+        한장 로딩 vs 이미지 파일 30장 로딩
+        이미지 스프라이트는 변경이 잘 안되는 곳에 써야하고
+        지마켓 상품 이미지같은 걸
+        이미지 스프라이트로 쓸수는 없다
+    */
+    .bg-insta {
+        width: 54px; height: 54px;
+        background: url('./img/fb.png') 0px 0px;
+    }
+    .bg-kakao {
+        width: 54px; height: 54px;
+        background: url('./img/insta.png') 0px 0px;
+    }
+    .bg-fb {
+        width: 54px; height: 54px;
+        background: url('./img/kakao.png') 0px 0px;
+    }
+
+    /* 
+        배경이미지에서 x위치는 왼쪽에서 0px
+        y위치는 아래 300px
+        떨어진곳 부터 시작해서~ 가로24px, 세로24px만큼 영역
+    */
+
+    .uk {
+        width: 54px; height: 58px;
+        background: url('./img/uk.png') 0px 0px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="bg-insta"></div>
+    <hr>
+    <div class="bg-kakao"></div>
+    <hr>
+    <div class="bg-fb"></div>
+    <hr>
+    <div class="uk"></div>
+</body>
+</html>
