@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {   
+            text-align: center;
+            border: 1px solid black;
+        }
+        div {
+            width: 300px; height: 400px;
+            font-weight: 10px;
+            color: white;
+            float: left;
+            background-color: teal;
+            text-align: center;
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+        /* #div1 {
+            background-color: red;
+            margin-bottom: 50px;
+            margin-left: 50px;
+        }
+        #div2 {
+            background-color: blue;
+            margin-left: 50px;
+        } */
+
+        #div1>#div-sub1 {
+            width: 100px;
+            height: 130px;
+            margin-left: 32px;
+            margin-top: 15px;
+            background-color: violet;
+            box-sizing: border-box;
+        }
+        #div1>#div-down {
+            width: 250px;
+            height: 80px;
+            background-color: rgb(98, 33, 250);
+            margin-top: 15px;
+            margin-left: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Magin</h1>
+    <div id="div1">
+        <div id="div-sub1">
+            영역-sub
+        </div>
+        <div id="div-sub1">
+            영역-sub
+        </div>
+        <div id="div-sub1">
+            영역-sub
+        </div>
+        <div id="div-sub1">
+            영역-sub
+        </div>
+        <div id="div-down">
+            하단 부분 
+        </div>
+    </div>
+    <div id="div2">
+        영역2
+    </div>
+    <div id="div3">
+        영역3
+    </div>
+    <div id="div4">
+        영역4
+    </div>
+    <div id="div5">
+        영역5
+    </div>
+</body>
+</html>
