@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        embed : 포함시키다.
+        embeded programming : 임베디드 프로그래밍(HW+SW)
+        세탁기,냉장고,스마트tv안에 들어가는 기기
+     -->
+     <!-- 
+         embed : 오디오, 비디오, 플래시... 가리지 않고 다된다.
+         https://www.youtube.com/watch?v=7l63jqDyYZE -> 원주소
+         - v뒤에 있는 게 영상 id
+
+         https://www.youtube.com/embed/7l63jqDyYZE -> 변형
+         - embed사이에 추가하여 만든 주소
+
+         https://www.youtube.com/v/rRzxEiBLQCA&start=60
+         - embed에 v 넣고 &start=60 추가시켜 60초후에 시작하라 
+
+         https://www.youtube.com/v/rRzxEiBLQCA&autoplay=1&start=60
+         - 자동재생 옵션 주기
+         
+         &-ampersand-앰퍼샌드
+      -->
+<div>
+    <ul>
+        <li>
+            <ul>v=를 뺀 embed
+                <li>
+                    <embed style="width:500px; height:400px;" src="https://www.youtube.com/embed/7l63jqDyYZE" type="video/mp4">
+                </li>
+                <li>
+                    <embed style="width:500px; height:400px;" src="https://www.youtube.com/embed/wFoyXtQO7Zo" type="video/mp4"><hr>
+                </li>
+            </ul>
+
+            <ul>&start=60초를 추가시켜 시작위치 60초후에 사용하라
+                <li>
+                    <embed style="width:500px; height:400px;" src="https://www.youtube.com/v/rRzxEiBLQCA&start=60" type="video/mp4"><hr>
+                </li>
+            </ul>
+            
+            <ul>&autoplay=3를 추가시켜 자동재생하라
+                <li>
+                    <embed style="width:500px; height:400px;" src="https://www.youtube.com/v/rRzxEiBLQCA&autoplay=3" type="video/mp4">
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>        
+    
+</body>
+</html>
