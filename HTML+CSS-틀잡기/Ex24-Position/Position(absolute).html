@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* psoition 속성
+            relative는 현재위치에서 얼만큼 떨어졌다.
+            absulute는 상위요소 기준으로 얼만큼 떨어쪗는 가
+            그러면 상위요소를 누구를 잡느냐? 기준점을 내가 줘야되는 대
+            주로 부모를 기준점으로 잡는 다.
+
+            flexd는 화면에 고정
+            viewport에 고정
+            검색창 위에 고정시킬때
+            팝업창 중간에 고정시킬때
+        */
+        div {
+            width: 100px; height: 100px;
+            background-color: red;
+        }
+
+        #div2 {
+            background-color: blue;
+
+            position: absolute;
+            top: 20px; left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">div1</div>
+    <div id="div2">div2</div>
+    <div id="div3">div3</div>
+</body>
+</html>

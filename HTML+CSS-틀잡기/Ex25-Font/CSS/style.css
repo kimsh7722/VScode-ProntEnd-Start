@@ -1,0 +1,40 @@
+div {
+    width: 500px; height: 100px;
+    font-size: 50px;
+    border: 1px solid black;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+* {
+    margin: 0; padding: 0;
+}
+@font-face {
+    src: url(../Font-file/GmarketSansTTFBold.ttf);
+    font-family: 'Gmarket_Bold';
+}
+@font-face {
+    src: url(../Font-file/GmarketSansTTFLight.ttf);
+    font-family: 'Gmarket_Light';
+}
+@font-face {
+    src:url(../Font-file/GmarketSansTTFMedium.ttf);
+    font-family: 'Gmarket_Medium';
+}
+
+#div1 {
+    font-family: 'Gmarket_Bold';
+    padding-top: 23px;
+    box-sizing: border-box;
+}
+#div2 {
+    font-family: 'Gmarket_Light';
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+#div3 {
+    font-family: 'Gmarket_Medium';
+    padding-top: 25px;
+    box-sizing: border-box;
+}

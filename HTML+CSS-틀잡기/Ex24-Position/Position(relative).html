@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0; padding: 0;
+        }
+        #wrap {
+            width: 1200px; height: 700px;
+            background-color: aqua;
+        }
+        #header {
+            width: 1200px; height: 100px;
+            background-color: tomato;
+        }
+        #header>#logo {
+            width: 200px; height: 100px;
+            background-color: yellow;
+            float: left;
+        }
+        #header>#menu {
+            width: 1000px; height: 100px;
+            background-color: sienna;
+            float: left;
+        }
+
+        #content {
+            width: 1200px; height: 300px;
+            background-color: brown;
+            position: relative;
+            /*  하위요소 기준점 잡을 수 있게 기준점을 제공한다 
+                기준점은 relative,absolute,fiexd가 된다
+                and
+                position:relative만 주면 그냥움직이는 건 아니고 기준점만 준다
+
+                정리 
+                relative 기준 정하고 
+                absolute 상위 요소로부터 어디까지 이동할것 인가 결정한다
+            */
+        }
+        #content>#c1 {
+            width: 400px; height: 200px;
+            background-color: steelblue;
+            float: left;
+        }
+        #content>#c2 {
+            width: 400px; height: 200px;
+            background-color: rgb(70, 180, 98);
+            float: left;
+        }
+        #content>#c3 {
+            width: 400px; height: 200px;
+            background-color: rgb(180, 70, 175);
+            float: left;
+
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            /* 
+            상위요소 기준점을 지금 앚잡혔을 때
+            body기준으로 얼마 ~ 만큼 이동
+            */
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div id="logo"></div>
+            <div id="menu"></div>
+        </header>
+
+        <div id="content">
+            <div id="c1">컨텐츠1</div>
+            <div id="c2">컨텐츠2</div>
+            <div id="c3">컨텐츠3</div>
+        </div>
+
+        <footer></footer>
+    </div>
+</body>
+</html>
