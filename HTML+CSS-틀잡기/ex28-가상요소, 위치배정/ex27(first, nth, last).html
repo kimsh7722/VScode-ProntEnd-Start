@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px; height: 50px;
+        }
+        /* div : 첫번째 적용할 위치 */
+        #wrap>div:first-child {
+            background-color: red;
+        }
+        /* div : 배정받을 위치(2) */
+        #wrap>div:nth-child(2) {
+            background-color: orange;
+        }
+        #wrap>div:nth-child(3) {
+            background-color: yellow;
+        }
+        #wrap>div:nth-child(4) {
+            background-color: green;
+        }
+        #wrap>div:nth-child(5) {
+            background-color: blue;
+        }
+        #wrap>div:nth-child(6) {
+            background-color: rgb(22, 22, 90);
+        }
+        /* div : 마지막 적용할 위치 */
+        #wrap>div:last-child {
+            background-color: blueviolet;
+        }
+
+        /* 
+            first-child
+            첫번째 위치에 속성적용
+            
+            nth-child
+            배정받을 위치 ()안에 몇번째 위치에 따라 숫자로 구분한다
+
+            last-child
+            마지막 위치에 속성적용
+        */
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0; margin: 0;
+        }
+        ul {
+            list-style-type: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        ul {
+            width: 500px; height: 500px;
+            background-color: burlywood;
+            font-size: 20px;
+        }
+        ul>li {
+            float: left;
+            margin-right: 10px;
+        }
+        ul>li>a {
+            position: relative;
+        }
+
+        /* li : 첫번째 요소 > a :: 가상요소 해석 */
+        ul>li:first-child>a::after {
+            content: '';
+            width: 5px; height: 26.5px;
+            background-color: gray;
+            
+            position: absolute;
+            left: 42.5px;
+        }
+        ul>li:nth-child(2)>a::after {
+            content: '';
+            width: 5px; height: 26.5px; 
+            
+            background-color: red;
+            position: absolute;
+            left: 42.5px;
+        }
+        /* li: 배정받을 위치(2번째) */
+        /* ul>li:nth-child(3)>a::after {
+            content: '';
+            width: 5px; height: 26.5px;
+            margin-right: 10px;
+            background-color: gray;
+            float: left;
+        } */
+        ul>li:last-child>a::after {
+            content: '';
+            width: 5px; height: 26.5px;
+
+            background-color: black;
+            position: absolute;
+            left: 82.5px;
+        }
+
+
+
+        ul>li>a {
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+        <!-- ul>li*3>a 
+            간단하게 글자 사이에 막대기만들어 보자
+        -->
+    <ul>
+        <li><a href="#">상의</a></li>
+        <li><a href="#">하의</a></li>
+        <li><a href="#">엑세서리</a></li>
+    </ul>
+</body>
+</html>
